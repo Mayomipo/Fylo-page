@@ -282,6 +282,10 @@ header a {
         flex-direction: column;
         padding-bottom: 30px;
     }
+    .testimonial img {
+        padding: 10px;
+        height: 70px;
+    }
     .get-access {
         padding-top: 5px;
     }
