@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+--Navy850: hsl(217, 28%, 15%);
+--Navy900 : hsl(218, 28%, 13%);
+--Navy950 : hsl(216, 53%, 9%);
+--Navy800 : hsl(219, 30%, 18%);
+--Teal200: hsl(176, 68%, 64%);
+--Cyan500: hsl(198, 60%, 50%);
+--Red500: hsl(0, 100%, 63%);
+--White: hsl(0, 0%, 100%);
+}
+body {
+  
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+
+}
+h1, h2, h3, h4, h5, h6, button, a {
+    font-size: 14px;
+    font-weight: 400 700;
+}
+header {
+    background-color: var(--Navy900);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+header ul {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+header a {
+    color: var(--White);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.fa-bars {
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+.hero_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--Navy900);
+    text-align: center;
+    padding: 20px;
+}
+.hero_section h2 {
+    font-size: 2rem;
+    width: 50%;
+    color: var(--White);
+}
+
+.hero_section p {
+    font-size: 1.2rem;
+    width: 40%;
+    color: var(--White);
+}
+.hero_section button {
+    background-color: var(--Cyan500);
+    border: none;
+    padding: 15px 50px;
+    color: var(--White);
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.hero_section button:hover {
+    background-color: var(--Teal200);
+    transition: 2s ease-in-out;
+}
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--Navy950);
+    padding: 50px;
+    color: var(--White);
+    gap: 50px;
+    
+}
+.features div {
+    text-align: center;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+.stay_productive {
+    display: flex;
+    gap: 50px;
+     align-items: center;
+     justify-content: center;
+     padding: 50px;
+     background-color: var(--Navy900);
+     color: var(--White);
+}
+.stay_productive .content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.content a {
+ display: flex;
+ align-items: center;
+ gap: 5px;
+ color: var(--Teal200);
+}
+.testimonial-section {
+    background-color: var(--Navy900);
+    padding: 50px;
+    padding-bottom:  2px;
+}
+.testimonial {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding-left: 35px;
+}
+.testimonial div {
+    background-color: var(--Navy850);
+    padding: 15px;
+    color: var(--White);
+}
+.testimonial img {
+    border-radius: 50%;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+}
+.testimonial p {
+    padding: 15px;
+    padding-bottom: 25px;
+    font-size: 1.0rem;
+}
+.get-access {
+    background-color: var(--Navy900);
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+.get-access h3 {
+    font-size: 1.8rem;
+    padding-bottom: 25px;
+}
+.get-access p {
+    font-size: 1.0rem;
+    padding-bottom: 25px;
+}
+.get-access div {
+    background-color: var(--Navy850);
+    padding: 30px;
+    width: 60%;
+    border-radius: 10px;
+    text-align: center;
+    color: var(--White);
+    position: relative;
+    top: 150px;
+    box-shadow: 0 5px 15px black;
+}
+.get-access input {
+    border: none;
+    padding: 20px ;
+    height: 20%;
+    border-radius: 50px;
+    width: 60%;
+    margin: 10px;
+}
+.get-access button {
+    border: none;
+    padding: 1px ;
+    margin: 15px;
+    border-radius: 50px;
+    background-color: var(--Teal200);
+    color: var(--White);
+    font-size: 1.0rem;
+    font-weight: bold;
+}
+.Logo {
+    background-color: var(--Navy950);
+    width: 100%;
+    padding: 150px 60px 60px;
+}
+.footer {
+    background-color: var(--Navy950);
+    padding: 50px;
+}
+.footer .list {
+    display: flex;
+    /* gap: 30px; */
+    justify-content: space-between;
+    width: 100%;
+}
+.cont {
+    padding-right: 10px;
+}
+#media {
+    display: flex;
+    gap: 15px;
+}
+.footer p {
+    color: var(--White);
+    font-size: 0.9rem;
+}
+.footer ul{
+    list-style-type: none;
+    color: var(--White);
+}
+.location {
+    display: flex; 
+    gap: 10px;
+}
+.footer a {
+    color: var(--White);
+    text-decoration: none;
+}
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
+
+
+
+
+@media(max-width: 768px){
+    .fa-bars {
+        display: flex;
+    }
+    nav {
+        display: none;
+    }
+    #logo {
+        width: 80px;
+    }
+    .hero_section img, .hero_section p, .hero_section h2{
+    width: 100%;
+    }
+    .hero_section h2 {
+        font-size: 1.5rem;
+    }
+    .hero_section p {
+        font-size: 1rem;
+    }
+    .hero_section {
+        height: 100vh;
+    }
+    .features {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 15px;
+    }
+    .stay_productive {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .stay_productive #productive_image {
+        width: 100%;
+    }
+    .testimonial {
+        padding: 10px;
+        padding-right: 2px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+    .get-access {
+        padding-top: 5px;
+    }
+    .get-access div{
+        width: 100%;
+        padding: 15px;
+        position: relative;
+        top: 180px;
+        padding-bottom: 40px;
+    }
+    .get-access input {
+        padding: 15px;
+        width: 96%;
+    }
+    .get-access button {
+        width: 96%;
+        padding: 15px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        padding-top: 70px;
+    }
+    .list {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        padding-left: 40px;       
+    }
+    .location {
+        padding-bottom: 40px;
+        width: 100%;
+    }
+    .footer-list {
+        padding-bottom: 30px;
+    }
+    .cont {
+        padding-bottom: 40px;
+    }
+    .about {
+        padding-bottom: 40px;
+    }
+    .Terms {
+        padding-bottom: 50px;
+    }
+    #media {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+}
